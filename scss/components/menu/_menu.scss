@@ -1,7 +1,8 @@
 .c-menu {
     height: 75px;
     width: 100%;
-    background: darkblue;
+    background: $primarycolor;
+    border: 2px solid black;
     .main-icon-container {
         float: left;
         height: 75px;
@@ -19,17 +20,19 @@
     .menu-nav {
         height: 75px;
         float: left;
-        margin: 12.5px 30px;
-        width: 900px;
+        margin: 0 30px;
+        width: 1710px;
+        border: 2px solid black;
+        text-align: center;
         .list-item {
             font-size: 0;
-            margin: 15px 50px 15px 100px;
+            margin: 25.5px 50px 25.5px 100px;
             display: inline-block;
             text-align: center;
             .list-item-text {
                 font-size: 24px;
                 font-family: $secondaryfont;
-                color: white;
+                color: $secondarycolor;
                 text-decoration: none;
             }
         }
