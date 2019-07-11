@@ -1,0 +1,18 @@
+.c-card {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    .card-principal {
+        background: red;
+        height: 760px;
+        width: 300px;
+        border: 1px solid black;
+        margin-top: 20px;
+        .card-img-container {
+            height: 280px;
+            width: 280px;
+            background: black;
+            margin: 0 auto;
+        }
+    }
+}

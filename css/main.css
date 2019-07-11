@@ -90,3 +90,23 @@ html, body {
         font-family: "Permanent Marker", cursive;
         color: #ce0037;
         text-decoration: none; }
+
+.c-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .c-card .card-principal {
+    background: red;
+    height: 760px;
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 20px; }
+    .c-card .card-principal .card-img-container {
+      height: 280px;
+      width: 280px;
+      background: black;
+      margin: 0 auto; }
