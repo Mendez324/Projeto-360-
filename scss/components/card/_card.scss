@@ -2,7 +2,7 @@
     max-width: 100vw;
     width: 100%;
     display: block;
-    border: 2px solid black;
+    
     .card-principal {
         display: flex;
         align-items: center;
@@ -12,14 +12,21 @@
         height: auto;
         padding: 20px;
         margin: 0 auto;
-        border: 1px solid black;
+        border-bottom: 1px solid black;
         .art-container {
-            display: flex;
+            display: block;
             height: 500px;
             width: 600px;
-            margin: 5px;
-            background: $backcolor;
+            margin: 20px;
+            background: $secondarycolor;
             position: relative;
+            border-radius: 15px;
+            .art-img {
+                object-fit: cover;
+                width: 100%;
+                height: 500px;
+                border-radius: 15px;
+            }
             .card-titles {
                 font-family: $secondaryfont;
                 color: $secondarycolor;
@@ -28,9 +35,44 @@
                 transform: rotate(-90deg);
                 left: -15%;
                 top: 10%;
-                
-
             }
+            .art-titles {
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                padding: 10px;
+                .card-inside-title {
+                    padding: 10px;
+                    text-align: center;
+                    font-family: $secondaryfont;
+                    color: $primarycolor;
+                    font-size: 40px;
+                    margin: 0 auto;
+                }
+            }
+            .card-text-container {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                
+                }
+                .card-text {
+                    line-height: 1.6;
+                    padding: 10px;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    font-family: $secondaryfont;
+                    color: $primarycolor;
+                    font-size: 20px;
+                    margin: 0 auto;
+                    &:nth-of-type(2) {
+                        font-size: 40px;
+                    
+                }
+            }
+            
+            
             
             
         }
