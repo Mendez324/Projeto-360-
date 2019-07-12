@@ -2,27 +2,24 @@
     height: 75px;
     width: 100%;
     background: $primarycolor;
-    border: 2px solid black;
+    background: #21335E;
+    position: relative;
+    display: flex;
     .main-icon-container {
-        float: left;
-        height: 75px;
+        height: auto;
         width: 120px;
         margin: 12.5px;
         .icon-wrapper {
             display: block;
             width: 100%;
-            height: 75px;
             .yorn-icon {
                 width: 100%;
             }
         }
     }
     .menu-nav {
-        height: 75px;
-        float: left;
+        width: 100%;
         margin: 0 30px;
-        width: 1710px;
-        border: 2px solid black;
         text-align: center;
         .list-item {
             font-size: 0;

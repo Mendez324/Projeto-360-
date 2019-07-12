@@ -1,18 +1,42 @@
 .c-card {
+    max-width: 100vw;
     width: 100%;
-    display:flex;
-    justify-content: center;
+    display: block;
+    border: 2px solid black;
     .card-principal {
-        background: red;
-        height: 760px;
-        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $primarycolor;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
         border: 1px solid black;
-        margin-top: 20px;
-        .card-img-container {
-            height: 280px;
-            width: 280px;
-            background: black;
-            margin: 0 auto;
+        .art-container {
+            display: flex;
+            height: 500px;
+            width: 600px;
+            margin: 5px;
+            background: $backcolor;
+            position: relative;
+            .card-titles {
+                font-family: $secondaryfont;
+                color: $secondarycolor;
+                font-size: 30px;
+                position: absolute;
+                transform: rotate(-90deg);
+                left: -15%;
+                top: 10%;
+                
+
+            }
+            
+            
         }
     }
+
+    
+
+
 }
