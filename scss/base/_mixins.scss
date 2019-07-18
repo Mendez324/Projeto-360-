@@ -4,3 +4,31 @@
       @content;
     }
 }    
+
+
+// Mixin to position the menu bar
+@mixin dash-burguer-menu () {
+  @for $i from 1 through 3 {
+    &--dash:nth-child(#{$i}) {
+      top: #{$i*7}px;
+      position: relative;
+    }
+  }
+}
+
+@mixin open-burguer-menu () {
+  &--dash:nth-child(1) {
+    top: 24px;
+    transform: $spinright;
+  }
+    
+  &--dash:nth-child(2) {
+    left: -30px;
+    opacity: 0;
+  }
+  
+  &--dash:nth-child(3) {
+    top: 20px;
+    transform: $spinleft;
+  }
+}

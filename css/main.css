@@ -75,6 +75,57 @@ html, body {
       width: 100%; }
       .c-menu .main-icon-container .icon-wrapper .yorn-icon {
         width: 100%; }
+  .c-menu .burguer-menu {
+    display: none; }
+    @media (min-width: 0) and (max-width: 1024px) {
+      .c-menu .burguer-menu {
+        display: inline-block;
+        float: right;
+        height: 42px;
+        width: 50px;
+        margin: 14px 20px;
+        cursor: pointer;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; }
+        .c-menu .burguer-menu--dash:nth-child(1) {
+          top: 7px;
+          position: relative; }
+        .c-menu .burguer-menu--dash:nth-child(2) {
+          top: 14px;
+          position: relative; }
+        .c-menu .burguer-menu--dash:nth-child(3) {
+          top: 21px;
+          position: relative; }
+        .c-menu .burguer-menu--dash {
+          height: 4px;
+          border-radius: 20px;
+          width: 100%;
+          display: block;
+          background: #ce0037;
+          -webkit-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+          transition: 0.25s ease-in-out;
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: 0.25s ease-in-out; }
+        .open .c-menu .burguer-menu--dash:nth-child(1) {
+          top: 24px;
+          -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          transform: rotate(135deg); }
+        .open .c-menu .burguer-menu--dash:nth-child(2) {
+          left: -30px;
+          opacity: 0; }
+        .open .c-menu .burguer-menu--dash:nth-child(3) {
+          top: 20px;
+          -webkit-transform: rotate(-135deg);
+          -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg); } }
   .c-menu .menu-nav {
     width: 100%;
     text-align: center;
@@ -84,6 +135,9 @@ html, body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media (min-width: 0) and (max-width: 1024px) {
+      .c-menu .menu-nav {
+        display: none; } }
     .c-menu .menu-nav .menu-list {
       display: inline-block; }
       .c-menu .menu-nav .menu-list .list-item {

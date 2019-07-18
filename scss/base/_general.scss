@@ -4,3 +4,10 @@ $secondaryfont: 'Permanent Marker', cursive;
 $primarycolor: #FFFFFF;
 $secondarycolor: #ce0037;
 $backcolor: #21335E;
+
+// Variables spin
+$spindefault: rotate(0deg);
+$spinright: rotate(135deg);
+$spinleft: rotate(-135deg);
+$duration: .25s;
+$type: ease-in-out;
