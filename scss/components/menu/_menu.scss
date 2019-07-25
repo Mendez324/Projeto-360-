@@ -1,10 +1,12 @@
 .c-menu {
     height: 70px;
     width: 100%;
-    background: $primarycolor;
-    position: relative;
+    position: fixed;
     display: flex;
     border-bottom: 1px solid black;
+    font-family: $primaryfont;
+    text-transform: uppercase;
+    background: $secondarycolor;
     .main-icon-container {
         height: auto;
         width: 120px;
@@ -18,51 +20,23 @@
         }
     }
 
-    .burguer-menu {
-        display: none;
-        @include mq(0,1024px) {
-            display: inline-block;
-            float: right;
-            height: 42px;
-            width: 50px;
-            margin: 14px 20px;
-            cursor: pointer;
-            transition: $duration * 2 $type;
-            @include dash-burguer-menu();
-            
-            &--dash {
-            height: 4px;
-            border-radius: 20px;
-            width: 100%;
-            display: block;
-            background: $secondarycolor;
-            transition: $duration $type;
-            transform: $spindefault;
-            opacity: 1;
-            left: 0;
-            transform: $spindefault;
-            transition: $duration $type;
-            }
-            
-            .open &{
-            @include open-burguer-menu();
-            }
-        }
-        
-    }
+    
     .menu-nav {
         width: 100%;
         text-align: center;
         display: flex;
         align-items: center;
+        margin-left: 50px;
         @include mq(0,1024px) {
             display: none;
         }
         .menu-list {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
             .list-item {
                 font-size: 0;
-                margin: 25.5px 50px;
+                margin: 25.5px;
                 display: inline-block;
                 text-align: center;
                 .social-icon-container {
@@ -73,15 +47,53 @@
                     }
                 }
                 .list-item-text {
-                    font-size: 24px;
-                    font-family: $secondaryfont;
-                    color: $secondarycolor;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    color: $primarycolor;
                     text-decoration: none;
-                    
                 }
             }
         }
         
 
+    }
+    .ask-card {
+        display: flex;
+        width: 150px;
+        height: 75px;
+        margin: 0 right;
+        align-items: center;
+        background: $backcolor;
+        .cta-ask-card {
+            width: 100%;
+            height: 50px;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 14px 0;
+            display: inline-block;
+            .ask {
+                padding-left: 5px;
+                display: flex;
+                align-items: center;
+                width: 50%;
+                height: 50px;
+                font: inherit;
+                p {
+                    text-align: center;
+                    flex-basis: 50%;
+                    font-style: italic;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                    line-height: 17px;
+                    color: #ffffff;
+                    font-size: 12px;
+                }
+                .card-image {
+                    flex-basis: 50%;
+                    margin-left: 2px;
+                }
+            }
+            
+        }
     }
 }
