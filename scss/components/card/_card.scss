@@ -1,8 +1,5 @@
 .c-hero-first {
-    display: flex;
-    flex-basis: 100%;
-    position: relative;
-    width: 100%;
+    max-width: 100vw;
     height: 100vh;
     text-align: center;
     margin: 0 auto;
@@ -14,19 +11,17 @@
         left: 0px;
         top: 0px;
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        @include mq (0,778px) {
+            width: auto;
+        }
     }
     
     .hero-network {
-        margin-top: 20px;
         top: 70px;
         position: relative;
-        width: 100%;
-        display: block;
         .rd-title {
-            width: 33.333%;
-            height: 86px;
+            width: 50%;
             margin: 0 auto;
             position: relative;
             @include mq (0,1024px) {
@@ -36,7 +31,6 @@
                 width: 100%;
             }
             .title-text {
-                position: relative;
                 text-align: center;
                 font-family: $primaryfont;
                 font-size: 22px;
@@ -44,16 +38,23 @@
                 font-style: italic;
                 font-weight: bolder;
                 position: absolute;
-                top: 38%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                @include mq (0,778px) {
+                   font-size: 14px;
+                    
+                }
                     
             }
             
         }
         .fastnet {
             width: 100%;
-            position: relative;
+            @include mq (0,778px) {
+                width: 80%;
+                margin: 30px auto;
+            }
             .net-image {
                 width: auto;
                 @include mq (0,1024px) {
@@ -71,12 +72,22 @@
             h3 {
                 font-size: 26px;
                 margin-bottom: 40px;
+                @include mq (0,778px) {
+                    font-size: 14px;
+                     
+                 }
             }
             p {
                 width: 50%;
                 text-transform: initial;
                 margin: 0 auto;
                 font-size: 18px;
+                @include mq (0,778px) {
+                    font-size: 12px;
+                    max-width: 80%;
+                    width: 80%;
+                     
+                 }
                 &:nth-of-type(2) {
                     font-weight: normal;
                     margin-top: 30px;
@@ -90,6 +101,10 @@
                 background: $secondarycolor;
                 transform: skew(-30deg);
                 color: $primarycolor;
+                @include mq (0,778px) {
+                    margin-top: 20px;
+                     
+                 }
                 
             }
         }
