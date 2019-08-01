@@ -164,6 +164,7 @@ html, body {
     left: 0px;
     top: 0px;
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
     @media (min-width: 0) and (max-width: 778px) {
@@ -251,7 +252,6 @@ html, body {
 
 .streaming {
   position: relative;
-  max-width: 100vw;
   height: 100vh;
   text-align: center;
   margin: 0 auto;
@@ -265,8 +265,8 @@ html, body {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    -webkit-filter: grayscale(90%) sepia(13%) saturate(700%);
-    filter: grayscale(90%) sepia(13%) saturate(700%); }
+    -webkit-filter: sepia(9%) saturate(600%) contrast(50%);
+    filter: sepia(9%) saturate(600%) contrast(50%); }
     @media (min-width: 0) and (max-width: 778px) {
       .streaming .banner-image-editted {
         width: auto; } }
@@ -306,10 +306,7 @@ html, body {
         width: 100%; }
     .streaming .split-container .advantages {
       display: inline-block;
-      padding: 20px;
-      margin-top: 30px;
-      background: green;
-      width: 50%; }
+      padding: 20px; }
       .streaming .split-container .advantages .advantages-list {
         margin: 0 auto;
         width: 100%; }
@@ -317,14 +314,170 @@ html, body {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          font-size: 22px;
+          font-size: 23px;
           font-family: "Open Sans", sans-serif;
           text-align: left;
           color: #FFFFFF;
           font-weight: 900;
-          line-height: 4;
+          line-height: 5;
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
           .streaming .split-container .advantages .advantages-list .advantages-item span {
             margin-left: 15px; }
+    .streaming .split-container .explanation {
+      margin-top: 22px;
+      -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      color: #FFFFFF;
+      font-weight: bolder; }
+      .streaming .split-container .explanation h3 {
+        font-size: 26px;
+        margin-bottom: 40px; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .streaming .split-container .explanation h3 {
+            font-size: 14px; } }
+      .streaming .split-container .explanation p {
+        width: 50%;
+        text-transform: initial;
+        margin: 0 auto;
+        font-size: 18px; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .streaming .split-container .explanation p {
+            font-size: 12px;
+            max-width: 80%;
+            width: 80%; } }
+        .streaming .split-container .explanation p:nth-of-type(2) {
+          font-weight: normal;
+          margin-top: 30px; }
+      .streaming .split-container .explanation .button {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px 40px 13px 40px;
+        text-decoration: none;
+        background: #FFFFFF;
+        -webkit-transform: skew(-30deg);
+        -ms-transform: skew(-30deg);
+        transform: skew(-30deg);
+        color: #ce0037; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .streaming .split-container .explanation .button {
+            margin-top: 20px; } }
+
+.gaming {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
+  .gaming .gamer-image-editted {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-filter: saturate(200%) contrast(80%);
+    filter: saturate(200%) contrast(80%); }
+    @media (min-width: 0) and (max-width: 778px) {
+      .gaming .gamer-image-editted {
+        width: auto; } }
+  .gaming .hero-network {
+    top: 70px;
+    position: relative; }
+    .gaming .hero-network .rd-title {
+      width: 33.333%;
+      margin: 0 auto; }
+      @media (min-width: 0) and (max-width: 1024px) {
+        .gaming .hero-network .rd-title {
+          width: 100%; } }
+      .gaming .hero-network .rd-title .rd-image {
+        width: 100%; }
+      .gaming .hero-network .rd-title .title-text {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 22px;
+        color: #ce0037;
+        font-style: italic;
+        font-weight: bolder;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+  .gaming .gaming-container {
+    display: block;
+    height: auto;
+    margin: 30px; }
+    .gaming .gaming-container .gaming-image {
+      display: inline-block;
+      height: 455px;
+      padding: 20px; }
+      .gaming .gaming-container .gaming-image .atention {
+        width: 100%; }
+    .gaming .gaming-container .advantages {
+      display: inline-block;
+      padding: 20px; }
+      .gaming .gaming-container .advantages .advantages-list {
+        margin: 0 auto;
+        width: 100%; }
+        .gaming .gaming-container .advantages .advantages-list .advantages-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          font-size: 23px;
+          font-family: "Open Sans", sans-serif;
+          text-align: left;
+          color: #FFFFFF;
+          font-weight: 900;
+          line-height: 5;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .gaming .gaming-container .advantages .advantages-list .advantages-item span {
+            margin-left: 15px; }
+    .gaming .gaming-container .explanation {
+      margin-top: 22px;
+      -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      color: #FFFFFF;
+      font-weight: bolder; }
+      .gaming .gaming-container .explanation h3 {
+        font-size: 26px;
+        margin-bottom: 40px; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .gaming .gaming-container .explanation h3 {
+            font-size: 14px; } }
+      .gaming .gaming-container .explanation p {
+        width: 50%;
+        text-transform: initial;
+        margin: 0 auto;
+        font-size: 18px; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .gaming .gaming-container .explanation p {
+            font-size: 12px;
+            max-width: 80%;
+            width: 80%; } }
+        .gaming .gaming-container .explanation p:nth-of-type(2) {
+          font-weight: normal;
+          margin-top: 30px; }
+      .gaming .gaming-container .explanation .button {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 15px 40px 13px 40px;
+        text-decoration: none;
+        background: #FFFFFF;
+        -webkit-transform: skew(-30deg);
+        -ms-transform: skew(-30deg);
+        transform: skew(-30deg);
+        color: #ce0037; }
+        @media (min-width: 0) and (max-width: 778px) {
+          .gaming .gaming-container .explanation .button {
+            margin-top: 20px; } }
