@@ -21,7 +21,7 @@
         top: 70px;
         position: relative;
         .rd-title {
-            width: 33.333%;
+            width: 25%;
             margin: 0 auto;
             @include mq (0,1024px) {
                 width: 100%;
@@ -48,30 +48,29 @@
     .gaming-container {
         display:block;
         height: auto;
-        margin: 30px;
+        margin-top: 50px;
+        width: 100%;
         .gaming-image {
             display: inline-block;
-            height: 455px;
-            padding: 20px;
             .atention {
-                width: 100%;
+                width: 90%;
             }
             
         }
         .advantages {
             display: inline-block;
-            padding: 20px;
             .advantages-list {
                 margin: 0 auto;
                 width: 100%;
                 .advantages-item {
                     display: flex;
-                    font-size: 23px;
+                    width: 60%;
+                    font-size: 26px;
                     font-family: $primaryfont;
                     text-align: left;
                     color: $primarycolor;
                     font-weight: 900;
-                    line-height: 5;
+                    margin: 30px;
                     align-items: center;
                     span {
                         margin-left: 15px;
@@ -81,21 +80,12 @@
         }
         .explanation {
             margin-top: 22px;
-            flex-basis: 33.3%;
             text-align: center;
             font-family: $primaryfont;
             color: $primarycolor;
             font-weight: bolder;
-            h3 {
-                font-size: 26px;
-                margin-bottom: 40px;
-                @include mq (0,778px) {
-                    font-size: 14px;
-                     
-                 }
-            }
             p {
-                width: 50%;
+                width: 60%;
                 text-transform: initial;
                 margin: 0 auto;
                 font-size: 18px;
@@ -105,9 +95,13 @@
                     width: 80%;
                      
                  }
-                &:nth-of-type(2) {
-                    font-weight: normal;
-                    margin-top: 30px;
+                &:nth-of-type(1) {
+                    font-weight: bolder;
+                    font-size: 22px;
+                    margin-bottom: 25px;
+                }
+                &:nth-child(2) {
+                    width: 30%;
                 }
             }
             .button {
