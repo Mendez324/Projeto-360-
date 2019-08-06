@@ -5,8 +5,8 @@
     display: flex;
     font-family: $primaryfont;
     text-transform: uppercase;
-    @include mq (0,1046px) {
-        //max-width: 900px;
+    @include mq (0,778px) {
+        
     }
     .main-icon-container {
         width: 120px;
