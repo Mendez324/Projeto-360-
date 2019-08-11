@@ -58,10 +58,14 @@ html, body {
   position: relative;
   height: 100%; }
 
+#wrapper {
+  height: 100%; }
+
 .c-menu {
   height: 70px;
   width: 100%;
   position: fixed;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +175,6 @@ html, body {
       .c-hero-first .banner-image {
         max-width: 100vw; } }
   .c-hero-first .hero-network {
-    top: 70px;
     position: relative; }
     .c-hero-first .hero-network .rd-title {
       width: 40%;
@@ -273,7 +276,6 @@ html, body {
         width: auto;
         max-width: 100vw; } }
   .streaming .hero-network {
-    top: 70px;
     position: relative; }
     .streaming .hero-network .rd-title {
       width: 25%;

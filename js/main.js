@@ -1,5 +1,10 @@
-$(document).ready(function(){
-	$('.burguer-menu').click(function(){
-		$(this).toggleClass('open');
+$(document).ready(function() {
+	$('#wrapper').fullpage({
+		//options here
+		
+		navigation: true
 	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(true);
 });
