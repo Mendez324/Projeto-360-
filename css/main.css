@@ -82,7 +82,28 @@ html, body {
     margin: 0 auto; }
     @media (min-width: 0) and (max-width: 1046px) {
       .c-menu .menu-nav {
-        display: none; } }
+        display: none;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: -webkit-transform 0.3s ease-in-out;
+        transition: -webkit-transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+        .c-menu .menu-nav.menu-nav-is-open {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+          position: absolute;
+          left: 0;
+          top: 70px;
+          width: 100%;
+          text-align: center;
+          display: block;
+          z-index: 8;
+          height: 100vh;
+          background: #21335E; } }
     .c-menu .menu-nav .menu-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -93,6 +114,9 @@ html, body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      @media (min-width: 0) and (max-width: 1046px) {
+        .c-menu .menu-nav .menu-list {
+          display: block; } }
       .c-menu .menu-nav .menu-list .list-item {
         margin: 25.5px 15px; }
         .c-menu .menu-nav .menu-list .list-item:nth-of-type(5) {
@@ -107,6 +131,10 @@ html, body {
         margin: 0 8px; }
         .c-menu .menu-nav .menu-list .social-icon .social-image {
           width: 100%; }
+          @media (min-width: 0) and (max-width: 1367px) {
+            .c-menu .menu-nav .menu-list .social-icon .social-image {
+              width: 5%;
+              margin: 20px; } }
   .c-menu .ask-card {
     width: 140px;
     background: #21335E; }
@@ -278,12 +306,14 @@ html, body {
     .streaming .hero-network .rd-title {
       width: 25%;
       margin: 0 auto; }
-      @media (min-width: 0) and (max-width: 1024px) {
+      @media (min-width: 0) and (max-width: 1366px) {
         .streaming .hero-network .rd-title {
-          width: 100%; } }
+          width: 100%;
+          position: relative;
+          margin-top: 50px; } }
       .streaming .hero-network .rd-title .rd-image {
         width: 100%; }
-        @media (min-width: 0) and (max-width: 778px) {
+        @media (min-width: 0) and (max-width: 1366px) {
           .streaming .hero-network .rd-title .rd-image {
             width: 60%; } }
       .streaming .hero-network .rd-title .title-text {
@@ -355,7 +385,7 @@ html, body {
             .streaming .split-container .advantages .advantages-list .advantages-item {
               font-size: 12px;
               max-width: 80%;
-              width: 80%;
+              width: 70%;
               margin: 2px; } }
           .streaming .split-container .advantages .advantages-list .advantages-item span {
             margin-left: 15px; }
@@ -407,7 +437,9 @@ html, body {
     color: #ce0037; }
     @media (min-width: 0) and (max-width: 778px) {
       .explanation .button {
-        margin-top: 20px; } }
+        margin-top: 10px;
+        padding: 10px 20px 8px 20px;
+        font-size: 12px; } }
 
 .burger-menu {
   display: none; }
@@ -416,7 +448,7 @@ html, body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      font-size: 4rem;
+      font-size: 3rem;
       width: 100px;
       position: relative;
       background: #ce0037; } }
@@ -424,7 +456,7 @@ html, body {
     opacity: 1;
     background-color: white;
     display: block;
-    height: 0.22em;
+    height: 0.17em;
     position: absolute;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -432,21 +464,22 @@ html, body {
     left: 0;
     right: 0;
     border-radius: 1rem;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0); }
     .burger-menu span:nth-of-type(1) {
-      top: 0em; }
+      top: 20%; }
     .burger-menu span:nth-of-type(2) {
-      top: calc(50% - 0.11em);
+      top: calc(50% - 0.085em);
       z-index: 1; }
     .burger-menu span:nth-of-type(3) {
-      top: calc(50% - 0.11em);
+      top: calc(50% - 0.085em);
       opacity: 0;
       z-index: 1; }
     .burger-menu span:nth-of-type(4) {
-      bottom: 0em; }
+      bottom: 20%; }
 
 .burger-menu--open span:nth-of-type(1) {
   opacity: 0;

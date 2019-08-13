@@ -10,5 +10,6 @@ $(document).ready(function() {
 
 	$('.burger-menu').click(function(){
 		$(this).toggleClass('burger-menu--open');
+			$(".menu-nav").toggleClass('menu-nav-is-open');
 	});
 });

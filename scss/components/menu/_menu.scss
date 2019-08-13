@@ -26,12 +26,31 @@
         margin: 0 auto;
         @include mq (0,1046px) {
             display: none;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+            &.menu-nav-is-open {
+                transform: translateY(0);
+                position:absolute;
+                left: 0;
+                top: 70px;
+                width:100%;
+                text-align:center;
+                display: block;
+                z-index: 8;
+                height: 100vh;
+                background: $backcolor;
+
+            }
         }
         .menu-list {
             display: flex;
             flex-basis: 70%;
             margin: 0 auto;
             align-items: center;
+            @include mq (0,1046px) {
+                display: block;
+                
+            }
             .list-item {
                margin: 25.5px 15px;
                &:nth-of-type(5) {
@@ -50,6 +69,11 @@
                
                 .social-image {
                     width: 100%;
+                    @include mq (0,1367px) {
+                        width: 5%;
+                        margin: 20px;
+                        
+                    }
                 }
                 
             } 

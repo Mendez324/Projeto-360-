@@ -25,12 +25,14 @@
         .rd-title {
             width: 25%;
             margin: 0 auto;
-            @include mq (0,1024px) {
+            @include mq (0,1366px) {
                 width: 100%;
+                position: relative;
+                margin-top: 50px;
             }
             .rd-image {
                 width: 100%;
-                @include mq (0,778px) {
+                @include mq (0,1366px) {
                     width: 60%;
                 }
             }
@@ -101,7 +103,7 @@
                     @include mq (0,778px) {
                         font-size: 12px;
                         max-width: 80%;
-                        width: 80%;
+                        width: 70%;
                         margin: 2px;
                          
                     }
